@@ -13,11 +13,10 @@ function RoundsList() {
 
 
     const fetchData = async () => {
-        // We retrieve information about all available rounds of a fictional game
+        // Retrieve information about all available rounds of a fictional game
         try {
             const response = await fetch('https://api.jsonbin.io/v3/b/675aea4ead19ca34f8d9fa38');
             const data = await response.json();
-            console.log('Fetched rounds:', data);
             setRounds(data.record || []);
         } catch (error) {
             setRounds( []);
@@ -27,7 +26,7 @@ function RoundsList() {
     };
 
     const handleRoundClick = async (roundId: string) => {
-        // We retrieve the available levels of the selected round
+        // Retrieve the available levels of the selected round
         if (selectedRound && selectedRound.id === roundId) {
             setSelectedRound(null);
         } else {
