@@ -1,0 +1,70 @@
+.app {
+  text-align: center;
+}
+
+.rounds-list {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  margin-top: 20px;
+}
+
+.rounds-list__table {
+  width: 50%;
+  border-collapse: collapse;
+}
+
+.rounds-list__header-cell {
+  color: #555;
+  font-weight: bold;
+  padding: 8px;
+  text-align: left;
+}
+
+.rounds-list__cell {
+  padding: 8px;
+  text-align: left;
+}
+
+.rounds-list__row {
+  cursor: pointer;
+  border-bottom: 1px solid #ddd;
+}
+
+.rounds-list__row:hover {
+  background-color: #f1f1f1;
+}
+
+.rounds-list__refresh-button {
+  margin-top: 10px;
+  padding: 10px 20px;
+  background-color: #4CAF50;
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+
+.rounds-list__refresh-button:hover {
+  background-color: #45a049;
+}
+
+.rounds-list__details {
+  padding: 10px;
+  background-color: #f9f9f9;
+  border: 1px solid #ddd;
+}
+
+.rounds-list__row--selected {
+  background-color: #e0f7fa;
+}
+
+.game-field {
+  display: flex;
+  margin-top: 10px;
+}
+
+.game-field__item {
+  width: 50px;
+  height: 50px;
+  margin-bottom: 10px;
+}
